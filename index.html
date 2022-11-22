@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>HTML</title>
+    <script src="https://cdn.tailwindcss.com">
+        https: //cdn.tailwindcss.com
+    </script>
+    <script src="cdn.tailwindcss.com.css"></script>
+    <!-- HTML -->
+
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="flex items-center justify-center h-[100vh] flex-col">
+<div class='relative bg-slate-900 rounded-full border-[1.3rem] border-slate-700 w-2/3 md:w-[320px] shadow-2xl shadow-slate-900/80 aspect-square text-white text-center flex items-center justify-center'>
+        <div class='w-6 border-4 border-slate-900 aspect-square bg-white rounded-full shadow shadow-black ' style="z-index:366;">
+
+        </div>
+
+        <div class="absolute hand shadow-xl text-right shadow-black top-1/2 left-1/2 bg-amber-300 h-1 w-[30%]" id="minutes"> </div>
+        <div class="absolute hand shadow-xl text-right shadow-black top-1/2 left-1/2 bg-red-300 h-1 w-[23%]" id="hours"> </div>
+        <div class="absolute hand shadow-xl text-right shadow-black top-1/2 left-1/2 bg-green-300 h-[2px] w-[35%]" id="second"> <span id="indicator"></span> </div>
+
+        <div class="absolute flex items-center text-3xl justify-between bg w-[90%] h-2"  style="z-index: 4545;">
+            <span>9</span>
+            <span>3</span>
+        </div>
+        <div class="absolute flex items-center text-xl justify-between bg w-[90%] h-1 rotate-[30deg] bg-gray-700">
+           <!--  <span class="rotate-[-30deg]">10 </span>
+           <span class="rotate-[-30deg]">4</span> -->
+        </div>
+        <div class="absolute flex items-center text-xl justify-between bg w-[90%] h-1 rotate-[60deg] bg-gray-700">
+            <!-- <span class="rotate-[-60deg]"> 11</span>
+            <span class="rotate-[-60deg]"> 5</span> -->
+        </div>
+        <div class="absolute flex items-center text-3xl justify-between bg w-[90%] h-2 rotate-[90deg]" style="z-index: 4545;">
+            <span class="rotate-[-90deg]"> 12</span>
+            <span class="rotate-[-90deg]"> 06 </span>
+        </div>
+        <div class="absolute flex items-center text-xl  justify-between bg w-[90%] h-1 rotate-[120deg] bg-gray-700">
+            <!-- <span class="rotate-[-120deg]"> 1</span>
+            <span class="rotate-[-120deg]"> 7</span> -->
+        </div>
+        <div class="absolute flex items-center text-xl justify-between bg w-[90%] h-1 rotate-[150deg] bg-gray-700">
+            <!-- <span class="rotate-[-150deg]"> 2</span>
+            <span class="rotate-[-150deg]"> 8</span> -->
+        </div>
+        <div class="absolute  bg-slate-900 w-[80%] aspect-square rounded-full rotate-[150deg]"></div>
+    </div>
+    <div class="w-full mt-12 p-6 text-4xl text-center ">
+        <span id="digitalClock"></span>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
