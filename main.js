@@ -4,6 +4,8 @@ var hours = document.getElementById("hours")
 var digitalClock = document.getElementById('digitalClock')
 var indicator = document.getElementById('indicator')
 
+var htmlTag = document.getElementsByClassName('main')[0]
+var darkSwitch = document.getElementById('darkSwitch')
 var rotateSecond = 360 / 60
 var rotateMinute = 360 / 3600
 var rotateHour = 30 / 60
@@ -43,3 +45,12 @@ let runClock = () => {
 }
 
 setInterval(runClock, 1000)
+
+darkSwitch.addEventListener('click',()=>{
+    htmlTag.classList.toggle('dark')
+    if (darkSwitch.innerText == 'Light Mode'){
+        darkSwitch.innerText = 'Dark Mode'
+    }else{
+        darkSwitch.innerText = 'Light Mode'
+    }
+})

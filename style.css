@@ -1,6 +1,9 @@
 *{
     font-family: roboto ;
     /* transition: all 1s linear; */
+    
+    /* Uncomment the property above to get smooth transition in clock hands .
+    This may cause a weired animation wheen second hand complete one cycle */
 }
 .hand {
     transform-origin: left;
@@ -12,4 +15,7 @@
 }
 #indicator {
     display: none;
+}
+.twist {
+    
 }

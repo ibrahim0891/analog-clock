@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class=" main">
 
 <head>
     <meta charset="UTF-8">
@@ -13,20 +13,24 @@
     <script src="cdn.tailwindcss.com.css"></script>
     <!-- HTML -->
 
-
+    <script>
+        tailwind.config = {
+            darkMode : "class"
+        }
+    </script>
     <!-- Custom Styles -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="flex items-center justify-center h-[100vh] flex-col">
-<div class='relative bg-slate-900 rounded-full border-[1.3rem] border-slate-700 w-2/3 md:w-[320px] shadow-2xl shadow-slate-900/80 aspect-square text-white text-center flex items-center justify-center'>
-        <div class='w-6 border-4 border-slate-900 aspect-square bg-white rounded-full shadow shadow-black ' style="z-index:366;">
+<div class='twist relative shadow-inner bg-slate-900 dark:bg-gray-200 rounded-full border-[1.3rem] border-slate-700 dark:border-gray-400 w-2/3 md:w-[400px] shadow-2xl shadow-slate-900/80 aspect-square text-white dark:text-black text-center flex items-center justify-center'>
+        <div class='w-6 border-4 border-slate-900 dark:border-none aspect-square bg-white rounded-full shadow shadow-black dark:shadow-none ' style="z-index:366;">
 
         </div>
 
-        <div class="absolute hand shadow-xl text-right shadow-black top-1/2 left-1/2 bg-amber-300 h-1 w-[30%]" id="minutes"> </div>
-        <div class="absolute hand shadow-xl text-right shadow-black top-1/2 left-1/2 bg-red-300 h-1 w-[23%]" id="hours"> </div>
-        <div class="absolute hand shadow-xl text-right shadow-black top-1/2 left-1/2 bg-green-300 h-[2px] w-[35%]" id="second"> <span id="indicator"></span> </div>
+        <div class="absolute hand shadow-xl text-right shadow-black top-1/2 left-1/2 bg-amber-300 dark:bg-amber-500 h-1 w-[30%]" id="minutes"> </div>
+        <div class="absolute hand shadow-xl text-right shadow-black top-1/2 left-1/2 bg-red-300 dark:bg-red-700 h-1 w-[23%]" id="hours"> </div>
+        <div class="absolute hand shadow-xl text-right shadow-black top-1/2 left-1/2 bg-green-300 dark:bg-green-500 h-[2px] w-[35%]" id="second"> <span id="indicator"></span> </div>
 
         <div class="absolute flex items-center text-3xl justify-between bg w-[90%] h-2"  style="z-index: 4545;">
             <span>9</span>
@@ -52,10 +56,15 @@
             <!-- <span class="rotate-[-150deg]"> 2</span>
             <span class="rotate-[-150deg]"> 8</span> -->
         </div>
-        <div class="absolute  bg-slate-900 w-[80%] aspect-square rounded-full rotate-[150deg]"></div>
+        <div class="absolute  bg-slate-900 dark:bg-gray-200 w-[80%] aspect-square rounded-full rotate-[150deg]"></div>
     </div>
     <div class="w-full mt-12 p-6 text-4xl text-center ">
         <span id="digitalClock"></span>
+    </div>
+    <div class="mt-4">
+        <button id="darkSwitch" class="p-4 bg-gray-800 dark:bg-gray-200 dark:shadow-lg dark:text-gray-900 text-white rounded dark:shadow-md">
+            Dark Theme
+        </button>
     </div>
     <script src="main.js"></script>
 </body>
